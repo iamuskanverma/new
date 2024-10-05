@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     
+    <title>cricket game</title>
+    <style>
+        body { 
+            text-align: center;
+            
+        }
+        .button{
+            background-color: coral;
+            margin: 2px 4px;
+
+        }
+    </style>
+</head>
+<body background="https://4kwallpapers.com/images/wallpapers/white-background-720x1280-11648.jpg">
+    <h1>Bat Ball Stump Game</h1>
+    <button onclick=" generatecomputerchoice()
+    //const userchoicemsg = 'you have chosen bat';
+  
+     // const computerchoicemsg =}`;
+      let resultmsg;
+      if (computerchoice == 'ball'){
+        score.win++;
+        resultmsg = 'user won';
+      } else if (computerchoice == 'bat'){
+        score.tie++;
+        resultmsg =`it's a tie`;
+      } else if (computerchoice == 'stump') {
+        score.lost++;
+        resultmsg='computer has won';
+      }
+      alert(`you have choosen bat.computer choice is ${computerchoice} and ${resultmsg}
+      
+      won:${score.win}, lost:${score.lost}, tie:${score.tie}`)";>bat</button>
+    <button onclick=" generatecomputerchoice()
+        //const userchoicemsg = 'you have chosen bat';
+        //  randomnumber = Math.random() * 3;
+        
+        // if (randomnumber > 0 && randomnumber <= 1) {
+        //      computerchoice = 'bat';
+        //    // console.log('computer choice is bat');
+        // } else if (randomnumber > 1 && randomnumber <= 2)
+        // {
+        //      computerchoice = 'ball';
+        //     //console.log('computer choice is ball');
+        // } else {
+        //     computerchoice = 'stump'; 
+        //    // console.log('computer choice is stump');   
+        //   }
+         // const computerchoicemsg =}`;
+        
+          if (computerchoice == 'ball'){
+            score.tie++;
+            resultmsg = `it's a tie`; 
+          } else if (computerchoice == 'bat'){
+            score.lost++;
+            resultmsg =`computer has won`;
+          } else if (computerchoice == 'stump') {
+            score.win++;
+            resultmsg='user won';
+        }
+         
+          alert(`you have choosen ball.computer choice is ${computerchoice} and ${resultmsg}
+          
+          won:${score.win}, lost:${score.lost}, tie:${score.tie}`); ">ball </button>
+    <button onclick=" generatecomputerchoice()
+        //const userchoicemsg = 'you have chosen bat';
+        //  randomnumber = Math.random() * 3;
+         
+        // if (randomnumber > 0 && randomnumber <= 1) {
+        //      computerchoice = 'bat';
+        //    // console.log('computer choice is bat');
+        // } else if (randomnumber > 1 && randomnumber <= 2)
+        // {
+        //      computerchoice = 'ball';
+        //     //console.log('computer choice is ball');
+        // } else {
+        //     computerchoice = 'stump'; 
+        //    // console.log('computer choice is stump');   
+        //   }
+         // const computerchoicemsg =}`;
+           resultmsg;
+          if (computerchoice == 'ball'){
+            score.lost++;
+            resultmsg = `computer has won`; 
+          } else if (computerchoice == 'bat'){
+            score.win++;
+            resultmsg =`user won`;
+          } else if (computerchoice == 'stump') {
+            score.tie++;
+            resultmsg=`it's a tie`;
+        }
+         
+          alert(`you have choosen stump.computer choice is ${computerchoice} ${resultmsg}
+         
+         won:${score.win}, lost:${score.lost}, tie:${score.tie} `); ">
+   stump</button>
+   <script>
+    let score ={
+      win:0,
+      lost:0,
+      tie:0,
+    };
+   let computerchoice;
+   function generatecomputerchoice() {
+    let randomnumber = Math.random() * 3;
+ 
+ if (randomnumber > 0 && randomnumber <= 1) {
+      computerchoice = 'bat';
+    // console.log('computer choice is bat');
+ } else if (randomnumber > 1 && randomnumber <= 2)
+ {
+     let computerchoice = 'ball';
+     //console.log('computer choice is ball');
+ } else {
+     computerchoice = 'stump'; 
+    // console.log('computer choice is stump');   
+   }
+   }
+   </script>
+
+</body>
+</html>
